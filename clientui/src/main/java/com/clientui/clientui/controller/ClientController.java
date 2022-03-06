@@ -1,5 +1,6 @@
 package com.clientui.clientui.controller;
 
+import com.clientui.clientui.beans.CardNumberBean;
 import com.clientui.clientui.beans.CommandeBean;
 import com.clientui.clientui.beans.PaiementBean;
 import com.clientui.clientui.beans.ProductBean;
