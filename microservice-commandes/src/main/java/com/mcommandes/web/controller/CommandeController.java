@@ -37,4 +37,15 @@ public class CommandeController {
 
         return commande;
     }
+
+    /*
+     * Permet de mettre à jour une commande existante.
+     * save() mettra à jour uniquement les champs renseignés dans l'objet commande reçu. Dans ce cas, comme le champ date dans "commande" n'est
+     * pas renseigné, la date précédemment enregistrée ne sera pas modifiée.
+     **/
+    @PutMapping(value = "/commandes")
+    public void updateCommande(@RequestBody Commande commande) {
+
+        commandesDao.save(commande);
+    }
 }
